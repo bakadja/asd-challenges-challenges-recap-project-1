@@ -66,6 +66,7 @@ export function filterByPublisher(publisher: string, books: Book[]): Book[] {
 
 // find by ISBN
 export async function getBookByISBN(isbn: string): Promise<Book[]> {
+  console.log("isbn [getBookByISBN]", isbn);
   try {
     const res = await fetch(baseURL + "books" + "/" + isbn);
     if (!res.ok) {

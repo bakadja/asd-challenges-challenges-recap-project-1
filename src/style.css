@@ -64,6 +64,12 @@ table {
   color: red;
 }
 
+.remove {
+  background-color: #f4f4f9;
+  color: red;
+}
+
+
 
 /* Loading*/
 /* 1. Le conteneur centré pour le loader */
