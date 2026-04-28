@@ -4,6 +4,8 @@
 [![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)
 [![Milligram](https://img.shields.io/badge/Milligram-9b4dca?style=for-the-badge&logo=css3&logoColor=white)](https://milligram.io/)
 
+![IT-Book Library Preview](src/images/preview.png)
+
 A modern, fast, and lightweight IT-Book Library application built as a recap project. This application allows users to browse a collection of IT books, search by title, filter by publisher, and manage a personal favorites list.
 
 ---
@@ -34,7 +36,14 @@ A modern, fast, and lightweight IT-Book Library application built as a recap pro
 ### Prerequisites
 
 1.  **Bun**: Ensure you have [Bun](https://bun.sh/) installed on your machine.
-2.  **Local API**: This project expects a book API running at `http://localhost:4730/`.
+2.  **Local API**: This project expects the [BookMonkey API](https://github.com/bookmonkey/bookmonkey-api) running at `http://localhost:4730/`.
+
+    The API supports the following endpoints:
+    - `GET    /books` - Get all books
+    - `GET    /books/:isbn` - Get a specific book by ISBN
+    - `POST   /books` - Create a new book
+    - `PUT    /books/:isbn` - Update a book by ISBN
+    - `DELETE /books/:isbn` - Delete a book by ISBN
 
 ### Installation
 
