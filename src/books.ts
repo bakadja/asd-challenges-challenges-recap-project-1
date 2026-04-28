@@ -35,7 +35,7 @@ export async function getBooks(): Promise<Book[]> {
       table.style.display = "unset";
     }
 
-    return books.slice(0, 20);
+    return books
   } catch (error) {
     console.error("Error during fetching books", error);
     if (loadingZone) {
